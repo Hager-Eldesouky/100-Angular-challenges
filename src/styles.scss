@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@mixin box-shadow{
+   
+    box-shadow:  0 1px 3px rgb(0, 0, 0.12) ,
+    0 1px 2px rgb(0, 0, 0,0.24) ;
+    transition: all 0.3s cubic-bezier(.25, 0.8, 0.25, 1);
+}
+/* @import'@fortawesome/fontawesome-free/css/all.css'; */
+
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+
+}
+
+i {
+    cursor: pointer;
+}

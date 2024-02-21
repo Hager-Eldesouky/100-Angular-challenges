@@ -1,0 +1,41 @@
+@import'../../../styles';
+
+.accordion-container {
+    @include box-shadow();
+
+
+    .item {
+
+        border-bottom: 1px solid wheat;
+
+
+
+
+        .header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            padding: 10px  10px;
+
+            i{
+
+                color: blue;
+                transition:all ,2s;
+                
+                
+                &.is-expanded{
+                    transform: rotate(-180deg);
+
+                }
+            }
+        }
+
+        .content{
+            padding:10px 20px;
+            display: none;
+            &.is-expanded{
+                display: block;
+            }
+        }
+    }
+}

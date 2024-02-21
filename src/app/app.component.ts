@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import{ }from '@fortawesome/free-brands-svg-icons'
+import { AccordionItem } from './components/accordion/accordion-item.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = '100-Angular-Challenges';
+ 
+ 
+
 }

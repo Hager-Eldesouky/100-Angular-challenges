@@ -1,0 +1,23 @@
+
+<app-card   [iconClasses]="'fas fa-info-circle'"  [title]="'creditcardFormatter'" [subtitle]="'pipes'">
+  <div body>
+    <p>  {{'1111111155555555555555' |creditCardFormatter}}</p>
+    <p>  {{'a22235647852369'|creditCardFormatter}}</p>
+    <p>  {{'122235647852369'|creditCardFormatter}}</p>
+   
+  </div>
+  
+  
+  </app-card>  
+  
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'turncate'" [subtitle]="'pipes'">
+  <p body>
+    {{'nskdjkhsejfhksefnksadfnklsdökfsekf.sndmjsdfklsjkf.s,ndfmbsdfk.sdnfsdfkhsdlfjSELÖFKESLFHNSKDFHSDLKJFLSNFLH' |
+    truncate:5 }}
+
+
+  </p>
+
+
+</app-card>

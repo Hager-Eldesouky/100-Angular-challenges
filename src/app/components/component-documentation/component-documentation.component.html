@@ -1,0 +1,64 @@
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter Post'" [subtitle]="'components'">
+    <div body>
+       <app-linked-in-post></app-linked-in-post>
+    </div>
+  </app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter Post'" [subtitle]="'components'">
+    <div body>
+       <app-twitter-post></app-twitter-post>
+    </div>
+  </app-card>
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Input'" [subtitle]="'components'">
+    <div body>
+      <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadonly]="false"></app-credit-card-input>
+      <br>
+      <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadonly]="true"></app-credit-card-input>
+    </div>
+  </app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Loader'" [subtitle]="'components'">
+
+    <app-loader-spinner [isLoading]="false"  body  ></app-loader-spinner>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'TopOfPage'" [subtitle]="'components'">
+
+    <p body> scroll 400px down the page to render</p>
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'star-rating'" [subtitle]="'components'">
+
+    <app-star-rating body [rating]="3.6"></app-star-rating>
+
+</app-card>
+
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'progres-bar'" [subtitle]="'components'">
+
+    <app-progress-bar body [value]="progressValue"></app-progress-bar>
+    <button footer (click)="progressValue=75;">update</button>
+
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'accordion'" [subtitle]="'components'">
+
+    <app-accordion body [items]="accordionItem"></app-accordion>
+
+</app-card>
+
+
+
+
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Card'" [subtitle]="'components'">
+    <p footer> fotter Content</p>
+    <p body> body Content</p>
+</app-card>
