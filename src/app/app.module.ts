@@ -22,6 +22,7 @@ import { CreditCardInputComponent } from './components/credit-card-input/credit-
 import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedInPostComponent } from './components/linked-in-post/linked-in-post.component';
+import { PagingComponent } from './components/paging/paging.component';
 
 
 @NgModule({
@@ -39,6 +40,8 @@ import { LinkedInPostComponent } from './components/linked-in-post/linked-in-pos
     CreditCardInputComponent,
     TwitterPostComponent,
     LinkedInPostComponent,
+    PagingComponent,
+    
     
   ],
   imports: [

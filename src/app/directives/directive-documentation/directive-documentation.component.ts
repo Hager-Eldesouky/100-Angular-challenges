@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DirectiveDocumentationComponent {
 
+  public log(){
+    console.log('hallo world')
+  }
 }
