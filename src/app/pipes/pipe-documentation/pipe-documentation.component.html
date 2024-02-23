@@ -1,15 +1,27 @@
 
-<app-card   [iconClasses]="'fas fa-info-circle'"  [title]="'creditcardFormatter'" [subtitle]="'pipes'">
+
+
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'filter'" [subtitle]="'pipes'">
   <div body>
-    <p>  {{'1111111155555555555555' |creditCardFormatter}}</p>
-    <p>  {{'a22235647852369'|creditCardFormatter}}</p>
-    <p>  {{'122235647852369'|creditCardFormatter}}</p>
-   
+    {{ ['hello ','world', 'hello world' ] | filterTerm:'world' }}
+
   </div>
-  
-  
-  </app-card>  
-  
+
+
+</app-card>
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'creditcardFormatter'" [subtitle]="'pipes'">
+  <div body>
+    <p> {{'1111111155555555555555' |creditCardFormatter}}</p>
+    <p> {{'a22235647852369'|creditCardFormatter}}</p>
+    <p> {{'122235647852369'|creditCardFormatter}}</p>
+
+  </div>
+
+
+</app-card>
+
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'turncate'" [subtitle]="'pipes'">
   <p body>

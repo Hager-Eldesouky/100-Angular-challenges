@@ -8,6 +8,7 @@ import { AppModule } from '../app.module';
 import { SharedModuleModule } from '../shared/shared.module/shared.module.module';
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './creditCardFormatter/credit-card-formatter.pipe';
+import { FilterTermPipe } from './FilterTerm/filter-term.pipe';
 
 
 
@@ -18,6 +19,7 @@ import { CreditCardFormatterPipe } from './creditCardFormatter/credit-card-forma
       PipeDocumentationComponent,
       TruncatePipe,
       CreditCardFormatterPipe,
+      
      
      
      ],

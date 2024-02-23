@@ -23,5 +23,11 @@ export class ComponentDocumentationComponent {
   
   
     public progressValue =25;
+    public toggleValue =true;
+
+
+    public debounceExampleMethod(value: string): void {
+      console.log('Component Documentation', value);
+    }
   
 }

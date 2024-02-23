@@ -1,9 +1,32 @@
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'SearchList'" [subtitle]="'components'">
+  
+  <app-search-list  body [items]="['United States', 'Mexico', 'United Arab Emirates']"></app-search-list>
+</app-card>
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'debounceSearch'" [subtitle]="'components'">
+  
+  <app-debounce-search body    (searchUpdate)="debounceExampleMethod($event)"></app-debounce-search>
+
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Toggle'" [subtitle]="'components'">
+  
+  <app-toggle   [isOn]="toggleValue" body ></app-toggle>
+
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'quote'" [subtitle]="'components'">
+  
+  <app-quote body [quote]="'Smoking really kills'" [author]=" 'just-me'" [occupation]="'Software Developer'"></app-quote>
+  
+
+</app-card>
 
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'paging'" [subtitle]="'components'">
   
-     <app-paging body [totalItems]="200" ></app-paging>
+     <app-paging body [totalItems]="100" ></app-paging>
      
  
 </app-card>

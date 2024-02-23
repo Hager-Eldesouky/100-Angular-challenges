@@ -23,6 +23,10 @@ import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedInPostComponent } from './components/linked-in-post/linked-in-post.component';
 import { PagingComponent } from './components/paging/paging.component';
+import { QuoteComponent } from './components/quote/quote.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
+import { DebounceSearchComponent } from './components/debounce-search/debounce-search.component';
+import { SearchListComponent } from './components/search-list/search-list.component';
 
 
 @NgModule({
@@ -41,6 +45,10 @@ import { PagingComponent } from './components/paging/paging.component';
     TwitterPostComponent,
     LinkedInPostComponent,
     PagingComponent,
+    QuoteComponent,
+    ToggleComponent,
+    DebounceSearchComponent,
+    SearchListComponent,
     
     
   ],
