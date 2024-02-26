@@ -19,7 +19,7 @@ import { PipesModule } from './pipes/pipes.module';
 import { SharedModuleModule } from './shared/shared.module/shared.module.module';
 import { LoaderSpinnerComponent } from './components/loader-spinner/loader-spinner.component';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedInPostComponent } from './components/linked-in-post/linked-in-post.component';
 import { PagingComponent } from './components/paging/paging.component';
@@ -27,6 +27,8 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { DebounceSearchComponent } from './components/debounce-search/debounce-search.component';
 import { SearchListComponent } from './components/search-list/search-list.component';
+import { ReactiveFormsEmailComponent } from './components/reactive-forms-email/reactive-forms-email.component';
+import { CounterComponent } from './components/counter/counter.component';
 
 
 @NgModule({
@@ -49,6 +51,8 @@ import { SearchListComponent } from './components/search-list/search-list.compon
     ToggleComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    ReactiveFormsEmailComponent,
+    CounterComponent,
     
     
   ],
@@ -58,7 +62,8 @@ import { SearchListComponent } from './components/search-list/search-list.compon
     FontAwesomeModule,
     RouterModule,
     SharedModuleModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
     
     
     

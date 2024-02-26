@@ -1,6 +1,17 @@
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Counter'" [subtitle]="'components'">
+<app-counter body ></app-counter>
+ 
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Form'" [subtitle]="'components'">
+  <app-reactive-forms-email  body></app-reactive-forms-email>
+ 
+</app-card>
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'SearchList'" [subtitle]="'components'">
   
-  <app-search-list  body [items]="['United States', 'Mexico', 'United Arab Emirates']"></app-search-list>
+  <app-search-list  body [items]="[ 'Benin','	Austria','United States', 'Mexico', 'United Arab Emirates']"></app-search-list>
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'debounceSearch'" [subtitle]="'components'">
