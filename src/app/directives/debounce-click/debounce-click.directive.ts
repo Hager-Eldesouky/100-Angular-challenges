@@ -7,10 +7,9 @@ import { Subject, Subscription, debounceTime } from 'rxjs';
 export class DebounceClickDirective implements OnInit, OnDestroy{
 
 
-
   @Output() public debounceClick = new EventEmitter();
   public clicks = new Subject();
-  public subscription: Subscription = new Subscription;
+  public subscription: Subscription = new Subscription();
 
   public ngOnInit(): void {
     const debounceTimeInMs = 500;
@@ -26,6 +25,7 @@ export class DebounceClickDirective implements OnInit, OnDestroy{
 
   @HostListener('click', ['$event'])
   public clickEvent(event: any): void {
+    
     event.preventDefault();
     event.stopPropagation();
     this.clicks.next(event);

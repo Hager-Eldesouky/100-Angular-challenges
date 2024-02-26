@@ -1,0 +1,15 @@
+<app-card  [iconClasses]="'fas fa-info-circle '"  [title]="'Fade In Out'"  [subtitle]="'animation'">
+ 
+    <div body> 
+       <h2 *ngIf="isInDom" [@FadeInOutAnimation]> haloooo</h2>
+       <h2 *ngIf="!isInDom" [@FadeInOutAnimation]> woorld</h2>
+    </div>
+
+
+    <div footer>
+        <button (click)="isInDom=!isInDom" >  Toggle Animation</button>
+
+    </div>
+    
+
+</app-card>

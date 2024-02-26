@@ -1,0 +1,12 @@
+<table *ngIf="tableDate.length&& tableDate">
+    <thead>
+ <tr>
+    <th *ngFor="let header of tableDate[0] | keyvalue">  {{header.key}}</th>
+ </tr>
+    </thead>
+    <tbody>
+ <tr  *ngFor="let row of tableDate">
+  <td  *ngFor="let data of row |keyvalue">{{data.value}}</td>
+ </tr>
+    </tbody>
+</table>
