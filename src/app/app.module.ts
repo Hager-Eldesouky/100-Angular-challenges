@@ -29,7 +29,8 @@ import { SimpleTableComponent } from './components/simple-table/simple-table.com
 import { TabsComponent } from './components/tabs/tabs.component';
 import { RippleButtonDirective } from './directives/RippleButton/ripple-button.directive';
 import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SortTableComponent } from './components/sort-table/sort-table.component'
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     TabsComponent,
     RippleButtonDirective,
     OtherDocumentationComponent,
+    SortTableComponent,
     
     
   ],

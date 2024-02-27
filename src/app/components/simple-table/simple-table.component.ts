@@ -1,4 +1,4 @@
-import { Input } from '@angular/core';
+import { EventEmitter, Input, Output } from '@angular/core';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,17 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './simple-table.component.scss'
 })
 export class SimpleTableComponent {
-
-
-  @Input() public tableDate: any[] = [
-    { first:'Hager ', last: ' walid ', dob:'10/25/1965'
-
-    },
-    { first:'ivad ', last: ' fdylr ', dob:'10/5/1965'
-
-  },
-  { first:'Haooor ', last: ' zyleee ', dob:'10/4/1965'
-
-},
+  @Input() public tableData: any[] = [
+    { first: 'Dylan 1', last: 'Israel', dob: '10/25/87' },
+    { first: 'Dylan 2', last: 'Israel', dob: '10/25/87' },
+    { first: 'Dylan 3', last: 'Israel', dob: '10/25/87' },
+    { first: 'Dylan 4', last: 'Israel', dob: '10/25/87' },
   ];
+
+  @Output() public headerSelected = new EventEmitter<{ key: string, value: any }>();
+
+  public headerSelection( key: any, value: any): void {
+    this.headerSelected.emit({ key, value });
+  }
 }
