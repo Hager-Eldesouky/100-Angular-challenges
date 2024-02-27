@@ -1,3 +1,16 @@
+
+<app-card  [iconClasses]="'fas fa-info-circle '"  [title]="'DirtyForm-Guard'"  [subtitle]="'Guard'">
+ 
+    
+    <form  body [formGroup]="form" (ngSubmit)="submit()">
+        <input type="text" placeholder="Your Name" formControlName="name">
+        <button >Submit</button>
+    </form>
+
+</app-card>
+
+
+
 <app-card  [iconClasses]="'fas fa-info-circle '"  [title]="'Fade In Out'"  [subtitle]="'animation'">
  
     <div body> 

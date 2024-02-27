@@ -52,7 +52,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     ToggleComponent,
     DebounceSearchComponent,
     SearchListComponent,
-    ReactiveFormsEmailComponent,
+    
     CounterComponent,
     SimpleTableComponent,
     TabsComponent,
