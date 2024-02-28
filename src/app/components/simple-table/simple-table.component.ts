@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class SimpleTableComponent {
   @Input() public tableData: any[] = [
-    { first: 'Dylan 1', last: 'Israel', dob: '10/25/87' },
-    { first: 'Dylan 2', last: 'Israel', dob: '10/25/87' },
-    { first: 'Dylan 3', last: 'Israel', dob: '10/25/87' },
-    { first: 'Dylan 4', last: 'Israel', dob: '10/25/87' },
+    { first: 'Dylan 1', last: 'moh', dob: '10/25/87' },
+    { first: 'hag 2', last: 'tala', dob: '10/25/87' },
+    { first: 'moll 3', last: 'mosta', dob: '10/25/87' },
+    { first: 'gaaay 4', last: 'jay', dob: '10/25/87' },
   ];
 
   @Output() public headerSelected = new EventEmitter<{ key: string, value: any }>();

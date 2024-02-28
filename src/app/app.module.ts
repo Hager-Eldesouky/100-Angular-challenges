@@ -30,7 +30,12 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { RippleButtonDirective } from './directives/RippleButton/ripple-button.directive';
 import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { SortTableComponent } from './components/sort-table/sort-table.component'
+import { SortTableComponent } from './components/sort-table/sort-table.component';
+import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
+import { BannerCutOutComponent } from './components/banner-cut-out/banner-cut-out.component';
+import { ScaleDirective } from './directives/scale/scale.directive';
+import { CountdownComponent } from './components/countdown/countdown.component';
+import { SnackbarComponent } from './components/snackbar/snackbar.component'
 
 
 @NgModule({
@@ -60,6 +65,11 @@ import { SortTableComponent } from './components/sort-table/sort-table.component
     RippleButtonDirective,
     OtherDocumentationComponent,
     SortTableComponent,
+    ButtonToggleComponent,
+    BannerCutOutComponent,
+    ScaleDirective,
+    CountdownComponent,
+    SnackbarComponent,
     
     
   ],
