@@ -4,15 +4,21 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 import { ServicesDocumentationComponent } from './services/services-documentation/services-documentation.component';
 import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
-import { FormDirtyGuard } from './other/other-documentation/FadeInOutAnimation/form-dirty-guard/form-dirty.guard';
+import { FormDirtyGuard } from './other/other-documentation/form-dirty-guard/form-dirty.guard';
 
 const routes: Routes = [
-  {path:'',component:ComponentDocumentationComponent},
+  {  data:{title:'Components'},
+    path:'',component:ComponentDocumentationComponent},
   
-  {path:'directives',component:DirectiveDocumentationComponent},
-  {path:'pipes',  loadChildren :()=>import('./pipes/pipes.module').then(m=>m.PipesModule) },
+  {   data:{title:'Directives'},
+    path:'directives',component:DirectiveDocumentationComponent},
+  {
+    data:{title:'Pipes'},
+    path:'pipes',  loadChildren :()=>import('./pipes/pipes.module').then(m=>m.PipesModule) },
   {path:'services',component:ServicesDocumentationComponent},
-  {path:'other',component:OtherDocumentationComponent  ,canDeactivate:[FormDirtyGuard] },
+  {
+    data:{title:'other'},
+    path:'other',component:OtherDocumentationComponent  ,canDeactivate:[FormDirtyGuard] },
 ]
 
 @NgModule({

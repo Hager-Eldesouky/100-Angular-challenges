@@ -2,14 +2,27 @@ import { Component, ViewChild } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
+import { SocialMediaIcon } from '../social-media-bar/models/social-media-icon.interface';
+import { SocialMedia } from '../social-media-bar/models/social-media.enum';
 
 
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.component.html',
-  styleUrl: './component-documentation.component.scss'
+  styleUrl: './component-documentation.component.scss',
+  
 })
 export class ComponentDocumentationComponent {
+
+  public loaded = false;
+  public socialMedia: SocialMediaIcon[] = [
+    { href: 'https://www.facebook.com', type: SocialMedia.Facebook },
+    { href: 'https://www.instagram.com', type: SocialMedia.Instagram },
+    { href: 'https://www.linkedin.com', type: SocialMedia.LinkedIn },
+    { href: 'https://twitter.com', type: SocialMedia.Twitter },
+    { href: 'https://www.YouTube.com', type: SocialMedia.YouTube },
+  ];
+
   parentDate: Date = new Date('2024-03-10 2:10:50');
 
 
@@ -54,7 +67,7 @@ export class ComponentDocumentationComponent {
   ];
 
   @ViewChild('snackBar')
-  public snackBar: SnackbarComponent = new SnackbarComponent;
+  snackBar!: SnackbarComponent;
   
   
   public snackbarShow(): void {

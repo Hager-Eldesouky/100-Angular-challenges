@@ -1,7 +1,40 @@
 
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Password'" [subtitle]="'comp'">
+  <div body>
+<app-password></app-password>
+ 
+
+  </div>
+  
+</app-card>
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Fieldset'" [subtitle]="'comp'">
+  <div body>
+
+    <app-fieldset [legend]="'write a review'">
+      <app-reactive-forms-email></app-reactive-forms-email>
+    </app-fieldset>
+
+  </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'social-media-side-bar'" [subtitle]="'component'">
+ <div body>  
+  <app-social-media-bar  [socialMedia]="socialMedia"></app-social-media-bar>
+ </div>
+  </app-card>
+
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'timer'" [subtitle]="'component'">
+  <app-footer body></app-footer>
+  </app-card>
+
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar'" [subtitle]="''">
   <div body>
-    <app-snackbar [message]="'example  '"  #snackBar></app-snackbar>
+    <app-snackbar [message]="'example '"  #snackBar></app-snackbar>
     <button (click)="snackbarShow()">Show Snackbar</button>
   </div>
 </app-card>

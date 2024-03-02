@@ -5,12 +5,15 @@ import { LoaderSpinnerComponent } from '../../components/loader-spinner/loader-s
 import { FilterTermPipe } from '../../pipes/FilterTerm/filter-term.pipe';
 import { ReactiveFormsEmailComponent } from '../../components/reactive-forms-email/reactive-forms-email.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SnackbarComponent } from '../../components/snackbar/snackbar.component';
+import { TabsComponent } from '../../components/tabs/tabs.component';
 
 
 
 @NgModule({
-  declarations: [CardComponent,LoaderSpinnerComponent,FilterTermPipe,ReactiveFormsEmailComponent],
-  exports:[CardComponent,LoaderSpinnerComponent,FilterTermPipe,ReactiveFormsEmailComponent],
+  declarations: [CardComponent,LoaderSpinnerComponent,FilterTermPipe,ReactiveFormsEmailComponent,SnackbarComponent,TabsComponent],
+  
+  exports:[CardComponent,LoaderSpinnerComponent,FilterTermPipe,ReactiveFormsEmailComponent,SnackbarComponent,TabsComponent,],
   imports: [
     CommonModule,
     FormsModule,

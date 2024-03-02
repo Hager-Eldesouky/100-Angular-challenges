@@ -35,7 +35,12 @@ import { ButtonToggleComponent } from './components/button-toggle/button-toggle.
 import { BannerCutOutComponent } from './components/banner-cut-out/banner-cut-out.component';
 import { ScaleDirective } from './directives/scale/scale.directive';
 import { CountdownComponent } from './components/countdown/countdown.component';
-import { SnackbarComponent } from './components/snackbar/snackbar.component'
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { ImageLazyloadingDirective } from './directives/lazy-loading-image/image-lazyloading.directive';
+import { FooterComponent } from './components/footer/footer.component';
+import { SocialMediaBarComponent } from './components/social-media-bar/social-media-bar.component';
+import { FieldsetComponent } from './components/fieldset/fieldset.component';
+import { PasswordComponent } from './components/password/password.component'
 
 
 @NgModule({
@@ -61,7 +66,6 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component'
     
     CounterComponent,
     SimpleTableComponent,
-    TabsComponent,
     RippleButtonDirective,
     OtherDocumentationComponent,
     SortTableComponent,
@@ -69,7 +73,12 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component'
     BannerCutOutComponent,
     ScaleDirective,
     CountdownComponent,
-    SnackbarComponent,
+    ImageLazyloadingDirective,
+    FooterComponent,
+    SocialMediaBarComponent,
+    FieldsetComponent,
+    PasswordComponent,
+    
     
     
   ],
@@ -89,7 +98,11 @@ import { SnackbarComponent } from './components/snackbar/snackbar.component'
     
   ],
   
-  providers: [],
+  providers: [   
+    { provide: 'Navigator', useValue: navigator },
+    { provide: 'Document', useValue: document },
+    { provide: 'Window', useValue: window },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

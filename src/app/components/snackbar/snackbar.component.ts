@@ -1,20 +1,24 @@
-import { Input } from '@angular/core';
+import { Input, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { of, delay } from 'rxjs';
+import { SnackbarService } from '../../other/other-documentation/snackbar-service/snackbar.service';
 
 @Component({
   selector: 'app-snackbar',
   templateUrl: './snackbar.component.html',
   styleUrl: './snackbar.component.scss'
 })
-export class SnackbarComponent {
+export class SnackbarComponent implements OnInit {
   @Input() public message = '';
   public isShown = false;
 
-  constructor() { }
+  constructor( public snackbarService :SnackbarService) { }
 
   public ngOnInit(): void {
-   
+   this.snackbarService.snackbar$.subscribe((value)=>{
+    this.message=value;
+    this.showMessage(value)
+   })
   }
 
   public showMessage(message: string): void {

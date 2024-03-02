@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot, UrlTree } from "@angular/router";
-import { OtherDocumentationComponent } from "../../other-documentation.component";
+import { OtherDocumentationComponent } from "../other-documentation.component";
 import { Observable } from "rxjs";
 
 @Injectable({
