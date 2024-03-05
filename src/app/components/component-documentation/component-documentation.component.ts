@@ -4,6 +4,7 @@ import { ButtonMeta } from '../button-toggle/button-meta.model';
 import { SnackbarComponent } from '../snackbar/snackbar.component';
 import { SocialMediaIcon } from '../social-media-bar/models/social-media-icon.interface';
 import { SocialMedia } from '../social-media-bar/models/social-media.enum';
+import { PillType } from '../pill/pill-type.enum';
 
 
 @Component({
@@ -13,6 +14,9 @@ import { SocialMedia } from '../social-media-bar/models/social-media.enum';
   
 })
 export class ComponentDocumentationComponent {
+
+public PillType = PillType;
+
 
   public loaded = false;
   public socialMedia: SocialMediaIcon[] = [

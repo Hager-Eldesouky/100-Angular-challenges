@@ -40,7 +40,10 @@ import { ImageLazyloadingDirective } from './directives/lazy-loading-image/image
 import { FooterComponent } from './components/footer/footer.component';
 import { SocialMediaBarComponent } from './components/social-media-bar/social-media-bar.component';
 import { FieldsetComponent } from './components/fieldset/fieldset.component';
-import { PasswordComponent } from './components/password/password.component'
+import { PasswordComponent } from './components/password/password.component';
+import { PillComponent } from './components/pill/pill.component';
+import { PillFilterListComponent } from './components/pill-filter-list/pill-filter-list.component';
+import { NotFoundComponent } from './components/not-found/not-found.component'
 
 
 @NgModule({
@@ -78,6 +81,9 @@ import { PasswordComponent } from './components/password/password.component'
     SocialMediaBarComponent,
     FieldsetComponent,
     PasswordComponent,
+    PillComponent,
+    PillFilterListComponent,
+    NotFoundComponent,
     
     
     

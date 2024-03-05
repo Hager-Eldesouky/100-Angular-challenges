@@ -1,5 +1,9 @@
 
-
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Rich Text'" [subtitle]="'Pipes'">
+  <div body>
+    <div [innerHtml]="html | richText"> </div>
+  </div>
+</app-card>
 
 
 

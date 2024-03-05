@@ -1,13 +1,32 @@
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Not Found'" [subtitle]="'Components'">
+  <div body>
+    <a routerLink="404">Go to Unknown Page</a>
+  </div>
+</app-card>
 
 
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Pill Filters'" [subtitle]="'Componen'">
+  <div body>
+    <app-pill-filter-list [pills]="['CA', 'FL', 'TN', 'OR', 'WA']"></app-pill-filter-list>
+  </div>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Pill'" [subtitle]="'component'">
+  <div body>
+    <app-pill [type]="PillType.Error" [iconClasses]="'fas fa-ta g'" [label]="'Error'"></app-pill>
+    <app-pill [type]="PillType.Info" [iconClasses]="'fas fa-tag'" [label]="'Info'"></app-pill>
+    <app-pill [type]="PillType.Success" [iconClasses]="'fas fa-tag'" [label]="'Success'"></app-pill>
+    <app-pill [type]="PillType.Warning" [label]="'Warning'"></app-pill>
+  </div>
+</app-card>
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Password'" [subtitle]="'comp'">
   <div body>
-<app-password></app-password>
- 
+    <app-password></app-password>
+
 
   </div>
-  
+
 </app-card>
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Fieldset'" [subtitle]="'comp'">
   <div body>
@@ -20,21 +39,21 @@
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'social-media-side-bar'" [subtitle]="'component'">
- <div body>  
-  <app-social-media-bar  [socialMedia]="socialMedia"></app-social-media-bar>
- </div>
-  </app-card>
+  <div body>
+    <app-social-media-bar [socialMedia]="socialMedia"></app-social-media-bar>
+  </div>
+</app-card>
 
 
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'timer'" [subtitle]="'component'">
   <app-footer body></app-footer>
-  </app-card>
+</app-card>
 
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Snackbar'" [subtitle]="''">
   <div body>
-    <app-snackbar [message]="'example '"  #snackBar></app-snackbar>
+    <app-snackbar [message]="'example '" #snackBar></app-snackbar>
     <button (click)="snackbarShow()">Show Snackbar</button>
   </div>
 </app-card>
@@ -42,7 +61,7 @@
 
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'timer'" [subtitle]="'component'">
-<app-countdown body  [countdownDate]="parentDate"></app-countdown>
+  <app-countdown body [countdownDate]="parentDate"></app-countdown>
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'banner'" [subtitle]="'component'">
@@ -51,7 +70,7 @@
 
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'button-Toggle'" [subtitle]="'component'">
-  <app-button-toggle body  [options]="buttonToggleOptions"></app-button-toggle>
+  <app-button-toggle body [options]="buttonToggleOptions"></app-button-toggle>
 </app-card>
 
 

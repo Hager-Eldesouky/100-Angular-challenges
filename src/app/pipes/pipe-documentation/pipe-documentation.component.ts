@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './pipe-documentation.component.scss'
 })
 export class PipeDocumentationComponent {
-
+  public html = '<a href="https://www.YouTube.com" target="blank">YouTube </a>';
 }

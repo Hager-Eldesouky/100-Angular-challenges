@@ -5,6 +5,7 @@ import { DirectiveDocumentationComponent } from './directives/directive-document
 import { ServicesDocumentationComponent } from './services/services-documentation/services-documentation.component';
 import { OtherDocumentationComponent } from './other/other-documentation/other-documentation.component';
 import { FormDirtyGuard } from './other/other-documentation/form-dirty-guard/form-dirty.guard';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   {  data:{title:'Components'},
@@ -19,6 +20,8 @@ const routes: Routes = [
   {
     data:{title:'other'},
     path:'other',component:OtherDocumentationComponent  ,canDeactivate:[FormDirtyGuard] },
+
+    {path:'**', component:NotFoundComponent }
 ]
 
 @NgModule({
