@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PipeDocumentationComponent {
   public html = '<a href="https://www.YouTube.com" target="blank">YouTube </a>';
+stringArray: string[]= ['Courses', 'YouTube', 'Twitter', 'LinkedIn'];
+public objectArray: { [key: string]: string; }[] = [
+  { content: 'Courses' },
+  { content: 'YouTube' },
+  { content: 'Twitter' },
+  { content: 'LinkedIn' },
+];
 }

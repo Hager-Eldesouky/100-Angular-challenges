@@ -12,6 +12,10 @@ import { slideRightAnimation } from './slideRightAnimation/slide-right.animation
   animations: [FadeInOutAnimation , slideRightAnimation]
 })
 export class OtherDocumentationComponent {
+  public state: { [key: string]: any } = {};
+ 
+  
+  
   public selectedTab = 0;
   public tabs: { title: string, active: boolean }[] = [
     { title: 'Tab 1', active: true },

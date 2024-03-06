@@ -1,4 +1,6 @@
 
+
+
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'Slide Right'" [subtitle]="'Other - Animation'">
     <app-tabs body [tabs]="tabs" (selectedTabIndex)="selectedTab = $event;">
       <h1 @slideRightAnimation *ngIf="selectedTab === 0">Tab 1 Example</h1>

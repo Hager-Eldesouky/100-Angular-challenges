@@ -10,6 +10,8 @@ import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './creditCardFormatter/credit-card-formatter.pipe';
 import { FilterTermPipe } from './FilterTerm/filter-term.pipe';
 import { RichTextPipe } from './RichText/rich-text.pipe';
+import { SortByPipe } from './SortBy/sort-by.pipe';
+import { SortByKeyPipe } from './SortByKey/sort-by-key.pipe';
 
 
 
@@ -21,6 +23,8 @@ import { RichTextPipe } from './RichText/rich-text.pipe';
       TruncatePipe,
       CreditCardFormatterPipe,
       RichTextPipe,
+      SortByPipe,
+      SortByKeyPipe,
       
      
      

@@ -46,6 +46,7 @@ import { PillFilterListComponent } from './components/pill-filter-list/pill-filt
 import { NotFoundComponent } from './components/not-found/not-found.component'
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -107,7 +108,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component'
   providers: [   
     { provide: 'Navigator', useValue: navigator },
     { provide: 'Document', useValue: document },
-    { provide: 'Window', useValue: window },
+    { provide: 'Window', useValue : window },
+    {provide:'localStorage', useValue: window.localStorage}
   ],
   bootstrap: [AppComponent]
 })
